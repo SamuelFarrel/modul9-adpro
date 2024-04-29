@@ -24,7 +24,7 @@
         - Compatibility : `ReceiverStream` kompatibel dengan `tonic::Streaming`, sehingga kita dapat menggunakan `ReceiverStream` untuk mengirimkan stream response di Rust gRPC services.
         - Error Handling : Dengan return hasil yang wrapped oleh `ReceiverStream`, kita dapat lebih mudah melakukan error handling pada stream response.
     - **Disadvantages** :
-        - Error Handling : `ReceiverStream` tidak memberikan error handling bawaan sehingga kita perlu mengimplementasikan error handling secara manual ketika menggunakan `ReceiverStream`.<br><br>
+        - Error Handling : `ReceiverStream` tidak memberikan error handling bawaan sehingga kita perlu mengimplementasikan error handling secara manual ketika menggunakan `ReceiverStream`.
         - Dukungan : `ReceiverStream` hanya mendukung koneksi satu arah, sehingga tidak cocok digunakan untuk bidirectional streaming di Rust gRPC services.<br><br>
 
 5. ***In what ways could the Rust gRPC code be structured to facilitate code reuse and modularity, promoting maintainability and extensibility over time?***
